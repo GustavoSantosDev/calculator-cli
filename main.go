@@ -96,7 +96,7 @@ func division() float64 {
 		fmt.Println("Second value cannot be zero. Please enter a valid number.")
 	}
 
-	result := firstValue * secondValueFloat
+	result := firstValue / secondValueFloat
 
 	operator := "Division"
 	history = append(history, Operation{Op: operator, Value: result})
