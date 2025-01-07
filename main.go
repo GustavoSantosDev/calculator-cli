@@ -93,7 +93,7 @@ func division() float64 {
 		if secondValueFloat != 0 {
 			break
 		}
-		fmt.Println("Second value cannot be zero. Please enter a valid number.")
+		fmt.Println("The second value cannot be zero because division by zero is not possible. Please enter a different number to proceed.")
 	}
 
 	result := firstValue / secondValueFloat
@@ -164,23 +164,23 @@ func main() {
 			fmt.Printf("Result: %.2f\n", resultado)
 		case 2:
 			resultado := resta()
-			fmt.Printf("Resultado: %.2f\n", resultado)
+			fmt.Printf("Result: %.2f\n", resultado)
 		case 3:
 			resultado := multiplicacion()
-			fmt.Printf("Resultado: %.2f\n", resultado)
+			fmt.Printf("Result: %.2f\n", resultado)
 		case 4:
 			resultado := division()
-			fmt.Printf("Resultado: %.2f\n", resultado)
+			fmt.Printf("Result: %.2f\n", resultado)
 		case 5:
 			resultado := raiz()
-			fmt.Printf("Resultado: %.2f\n", resultado)
+			fmt.Printf("Result: %.2f\n", resultado)
 		case 6:
 			resultado := exponencial()
-			fmt.Printf("Resultado: %.2f\n", resultado)
+			fmt.Printf("Result: %.2f\n", resultado)
 		case 7:
 			historial()
 		case 8:
-			fmt.Println("Saliendo del Programa...")
+			fmt.Println("Exiting the program...")
 			os.Exit(0)
 		default:
 			fmt.Println("Invalid action")
